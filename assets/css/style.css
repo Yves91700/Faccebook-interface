@@ -5,17 +5,17 @@ body{
 }
 
 .login-title {
-    background-color: green;
+   
     grid-area: login-title;
 }
 
 .login-form {
-    background-color: brown;
+    
     grid-area: login-form;
 }
 
 .login-footer {
-    background-color: blue;
+    
     grid-area: login-footer;
 }
 .container-login {
