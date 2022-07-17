@@ -1,5 +1,5 @@
 body{
-    margin: 0;
+    margin: 0 ;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -19,17 +19,19 @@ button{
 }
 .login-title h1{
     color: #1877f2;
-    font-size: 4rem;
-    margin: 15px;
+    font-size: 3.5rem;
+    margin: 5px;
 }
 .login-title p{
     font-size: 1.5rem;
+    margin: 15px;
 }
 
 .login-form {
     
     grid-area: login-form;
-    border: 1px solid black;
+    box-shadow: 0 2px 4px rgb(0 0 0 /10%), 0 8px 16px rgb(0 0 0 /20%);
+    border-radius: 5px;
     margin: 0 20px;
     width: 400px;
     margin: 0 auto;
@@ -41,16 +43,24 @@ button{
 .login-form .form-button .bt-login-submit{
     background-color: #1877f2;
     color: white;
-    width: 95%;
+    width: 96%; 
+    font-size: 1.1rem;
+}
+.login-form .form-button .bt-login-submit:hover {
+    background-color: #0966df;
 }
 
 .login-form .form-info p a {
     text-decoration: none;
     color: #1877f2;
 }
+.login-form .form-info p a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
 
 .login-form .divider{
-border: 0.1px solid gray;
+border: 0.1px solid rgb(222, 221, 221);
 width: 90%;
 margin: 20px auto;
 
@@ -59,40 +69,74 @@ margin: 20px auto;
 .login-form .form-button .bt-login-create-account{
     background-color: #42b72a ;
     color: white;
-    width: 70%;
-   
+    width: 60%;
+    font-size: 1.1rem;
+}
+.login-form .form-button .bt-login-create-account:hover {
+background-color: #30a519;
 }
 
 .login-form .form-row input{
     height: 50px;
-    font-size: 1.2rem;
-    width: 95%;
+    font-size: 1.1rem;
+    width: 90%;
     border-radius: 5px;
     border: 1px solid #ccc;
-    outline: none;
-
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
 }
 .login-footer {
-    
     grid-area: login-footer;
+    width: 350px;
+    margin: 0 auto;
+}
+.login-footer a {
+    text-decoration: none ;
+    color: black;
+    font-weight: bold;
+}
+.login-footer a:hover {
+text-decoration: underline;
 }
 .container-login {
+    margin: 0 auto;
     display: grid;
     height: 100vh;
     text-align: center;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 360px 1fr;
     grid-template-areas: "login-title" "login-form" "login-footer";
 }
+
+
 
 @media screen and (min-width: 900px) {
     .container-login{
         height: 75vh;
         text-align: center;
-        padding: 100px 50px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 200px;
+        padding: 100px 100px;
+        grid-template-columns: 1fr 650px;
+        grid-template-rows: 370px 200px;
         grid-template-areas: "login-title login-form" "none login-footer";
+        
+    }
+    .login-title {
+        text-align: left;
+        margin-left: 100px;
+        margin-top: 100px;
+       
+        
     }
     
+    
+}
+
+@media screen and (min-width: 1450px) {
+    .container-login {
+        grid-template-columns: 600px 400px;
+        justify-content: center;
+    }
 }
