@@ -45,7 +45,7 @@ button{
 .login-form .form-button .bt-login-submit{
     background-color: #1877f2;
     color: white;
-    width: 92%; 
+    width: 95%; 
     font-size: 1.1rem;
 }
 .login-form .form-button .bt-login-submit:hover {
@@ -81,14 +81,14 @@ background-color: #30a519;
 .login-form .form-row input{
     height: 50px;
     font-size: 1.1rem;
-    width: 85%;
+    width: 90%;
     border-radius: 5px;
     border: 1px solid #ccc;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    margin: 5px auto;
+   
+  
     padding-left: 20px;
+    
     
 }
 .login-footer {
@@ -114,6 +114,21 @@ text-decoration: underline;
     grid-template-areas: "login-title" "login-form" "login-footer";
 }
 
+footer{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    
+
+}
+
+footer p:hover {
+ cursor: pointer;
+ text-decoration: underline;
+}
 
 
 @media screen and (min-width: 900px) {
