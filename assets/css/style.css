@@ -2,6 +2,7 @@ body{
     margin: 0 ;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
 }
 button{
     border: none;
@@ -35,6 +36,7 @@ button{
     margin: 0 20px;
     width: 400px;
     margin: 0 auto;
+    background-color: white;
 }
 .login-form .form-row{
     margin: 5px 0;
@@ -43,7 +45,7 @@ button{
 .login-form .form-button .bt-login-submit{
     background-color: #1877f2;
     color: white;
-    width: 96%; 
+    width: 92%; 
     font-size: 1.1rem;
 }
 .login-form .form-button .bt-login-submit:hover {
@@ -79,7 +81,7 @@ background-color: #30a519;
 .login-form .form-row input{
     height: 50px;
     font-size: 1.1rem;
-    width: 90%;
+    width: 85%;
     border-radius: 5px;
     border: 1px solid #ccc;
     margin-top: 10px;
@@ -87,6 +89,7 @@ background-color: #30a519;
     margin-right: 10px;
     margin-bottom: 10px;
     padding-left: 20px;
+    
 }
 .login-footer {
     grid-area: login-footer;
