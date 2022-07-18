@@ -191,13 +191,14 @@ footer p:hover {
     display: flex;
     
 }
+
 @media screen and (min-width: 900px) {
     .container {
-        height: 70vh;
+        height: 80vh;
     }
 
   .container-login {
-    height: 75vh;
+    height: 70vh;
     text-align: center;
     padding: 100px 100px;
     grid-template-columns: 1fr 650px;
@@ -219,13 +220,13 @@ footer p:hover {
     height: 30vh;
  }
  footer .liens1{
-    width: 45%;
+    width: 60%;
  }
  footer .liens {
-    width: 45%;
+    width: 60%;
  }
  .meta{
-    width: 45%;
+    width: 60%;
 
     
  }
