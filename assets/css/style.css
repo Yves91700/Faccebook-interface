@@ -44,7 +44,7 @@ button {
   box-shadow: 0 2px 4px rgb(0 0 0 /10%), 0 8px 16px rgb(0 0 0 /20%);
   border-radius: 5px;
   margin: 0 20px;
-  width: 350px;
+  width: 300px;
   margin: 0 auto;
   background-color: white;
 }
@@ -135,15 +135,15 @@ footer .liens1 {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  
+  list-style-type: none;
   margin: 0 auto;
   width: 70%;
   color: gray;
   margin-top: 20px;
 }
 footer .liens {
-  display: flex;
-line-height: 0.2px;
+display: flex;
+list-style-type: none;
   width: 70%;
   text-align: center;
   margin: 0 auto;
@@ -152,15 +152,21 @@ line-height: 0.2px;
   margin-bottom: 100px;
 
 }
-
+footer .liens  a {
+    text-decoration: none;
+    color: gray;
+}
+ footer .liens1 a {
+    text-decoration: none;
+    color: gray;
+ }
 footer i {
   display: flex;
   background-color: whitesmoke;
   font-size: 1.1rem;
   font-weight: bold;
   border: 1px solid black;
-  padding: 0px 8px 4px 8px;
-  margin-top: 10px;
+  padding: 0px 6px 4px 6px;
   height: 15px;
   justify-content: center;
   text-align: center;
@@ -176,7 +182,7 @@ footer i:hover {
     cursor: pointer;
 }
 
-footer p:hover {
+footer a:hover {
   cursor: pointer;
   text-decoration: underline;
 }
@@ -217,19 +223,26 @@ footer p:hover {
     width: 92%;
   }
  footer {
-    height: 30vh;
+    height: 25vh;
+    justify-content: center;
  }
  footer .liens1{
     width: 60%;
- }
- footer .liens {
-    width: 60%;
- }
- .meta{
-    width: 60%;
+    height: 20px;
 
+ }
+ footer .divider{
+    height: 10px; 
     
  }
+ footer .liens {
+    width: 60%; 
+    height: 10px;
+ }
+ .meta{
+    width: 60%; 
+ }
+ 
 }
 
 @media screen and (min-width: 1450px) {
