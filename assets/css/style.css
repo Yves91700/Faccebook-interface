@@ -44,7 +44,7 @@ button {
   box-shadow: 0 2px 4px rgb(0 0 0 /10%), 0 8px 16px rgb(0 0 0 /20%);
   border-radius: 5px;
   margin: 0 20px;
-  width: 300px;
+  width: 340px;
   margin: 0 auto;
   background-color: white;
 }
@@ -73,7 +73,7 @@ button {
 }
 
 .login-form .divider {
-  border: 0.1px solid rgb(222, 221, 221);
+  border: 0.2px solid rgb(222, 221, 221);
   width: 90%;
   margin: 20px auto;
 }
@@ -99,7 +99,7 @@ button {
 }
 .login-footer {
   grid-area: login-footer;
-  width: 350px;
+  width: 330px;
   margin: 0 auto;
   font-size: 14px;
 }
@@ -164,17 +164,18 @@ footer i {
   display: flex;
   background-color: whitesmoke;
   font-size: 1.1rem;
+  color: black;
   font-weight: bold;
-  border: 1px solid black;
+  border: 0.5px solid gray;
   padding: 0px 6px 4px 6px;
   height: 15px;
   justify-content: center;
   text-align: center;
 }
 footer .divider {
-  border-top: 0.1px solid rgb(222, 221, 221);
+  border-top: 0.3px solid rgb(222, 221, 221);
   width: 50%;
-  margin: 20px auto;
+  margin: 0px auto;
   margin-bottom: 10px;
 }
 footer i:hover {
@@ -216,6 +217,10 @@ footer a:hover {
     margin-left: 100px;
     margin-top: 100px;
   }
+  .login-form {
+    width: 400px;
+    height: 360px;
+  }
   .login-form .form-row input{
     width: 85%;
   }
@@ -227,20 +232,28 @@ footer a:hover {
     justify-content: center;
  }
  footer .liens1{
-    width: 60%;
+    width: 70%;
     height: 20px;
+    margin-top: 40px;
 
  }
  footer .divider{
-    height: 10px; 
+    height: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px; 
+   
+    width: 67%;
     
  }
  footer .liens {
-    width: 60%; 
+    font-size: 12px;
+    width: 70%; 
     height: 10px;
+    line-height: 10px;
  }
  .meta{
-    width: 60%; 
+    
+    width: 70%; 
  }
  
 }
