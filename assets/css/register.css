@@ -1,0 +1,80 @@
+.container-register {
+    width: 5OOpx;
+    height: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -60%);
+    box-shadow: 0 2px 4px rgb(0 0 0 /10%), 0 8px 16px rgb(0 0 0 /33%);
+    border-radius: 5px;
+}
+.container-register .close {
+    position: absolute;
+    right: 5px;
+    font-size: 1.5rem;
+    color: #ccc;
+}
+.container-register .register-title{
+    padding: 20px;
+}
+.container-register .divider {
+    border: 0.1px solid #ccc;
+}
+
+.container-register .register-title h2 {
+    font-size: 2.3rem;
+    margin-bottom: 0;
+}
+.container-register .register-title p {
+color: gray;
+}
+/***********************REGISTER FORM *******************/
+.container-register .register-form {
+    padding: 10px;
+}
+.container-register .register-form input {
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.container-register .register-form .form-group-input {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+.container-register .register-form .form-group-input input {
+    flex: 1;
+    font-size: 1.1rem;
+    padding-left: 10px;
+  
+}
+.container-register .register-form .form-inline-input {
+    display: flex;
+    margin-bottom: 5px;
+}
+.container-register .register-form .form-inline-input input {
+    flex: 1;
+    font-size: 1.1rem;
+    padding-left: 10px;
+}
+.container-register .register-form .form-inline-date p {
+    color: gray;
+}
+.container-register .form-select-date  {
+    display: flex;
+    gap: 10px;
+}
+.container-register .form-select-date select {
+    flex: 1;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 1.1rem;
+    
+}
+
+.container-register .form-inline-genre {
+    color: gray;
+}
