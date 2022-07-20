@@ -13,9 +13,15 @@
     right: 5px;
     font-size: 1.5rem;
     color: #ccc;
+    cursor: pointer;
+}
+.container-register .close:hover {
+    cursor: pointer;
+    color: black;
+    transform: scale(1.1);
 }
 .container-register .register-title{
-    padding: 20px;
+    padding-left: 20px;
 }
 .container-register .divider {
     border: 0.1px solid #ccc;
@@ -76,5 +82,43 @@ color: gray;
 }
 
 .container-register .form-inline-genre {
+    color:gray;
+}
+ .container-register .form-radio-items {
+    text-align: center;
+    display: flex;
+    gap: 5px;
+    margin: 5px 0;
+    background-color: white;
+    color: black;
+}
+.container-register .form-radio-items .form-radio-item {
+    border: 1px solid #ccc;
+    height: 40px;
+    flex: 1;
+    border-radius: 5px;
+}
+.container-register .form-radio-items .form-radio-item label {
+    position: relative;
+    bottom: 15px;
+}
+.container-register .form-register-infos {
+    font-size: 0.9rem;
+    text-align: justify;
     color: gray;
+    margin-bottom: 5px;
+
+}
+.container-register .form-register-button {
+    text-align: center;
+}
+.container-register .form-register-button .bt-register-submit {
+
+    border: 1px solid black;
+    background-color: #00a400;
+    width: 200px;
+    height: 36px;
+    line-height: 5px;
+    color: white;
+    margin-top: 5px;
 }
