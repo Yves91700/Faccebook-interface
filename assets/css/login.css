@@ -1,0 +1,248 @@
+
+  
+  .gap-5 {
+    gap: 5px;
+  }
+  .gap-10 {
+    gap: 10px;
+  }
+  .gap-20 {
+    gap: 20px;
+  }
+  
+ 
+  
+  /************LOGIN PAGE************/
+  .login-title {
+    grid-area: login-title;
+  }
+  .login-title h1 {
+    color: #1877f2;
+    font-size: 3.5rem;
+    margin: 5px;
+  }
+  .login-title p {
+    font-size: 1.5rem;
+    margin: 15px;
+  }
+  
+  .login-form {
+    grid-area: login-form;
+    box-shadow: 0 2px 4px rgb(0 0 0 /10%), 0 8px 16px rgb(0 0 0 /20%);
+    border-radius: 5px;
+    margin: 0 20px;
+    width: 340px;
+    margin: 0 auto;
+    background-color: white;
+  }
+  .login-form .form-row {
+    margin: 5px 0;
+  }
+  
+  .login-form .form-button .bt-login-submit {
+    background-color: #1877f2;
+    color: white;
+    width: 90%;
+    font-size: 1.1rem;
+  }
+  .login-form .form-button .bt-login-submit:hover {
+    background-color: #0966df;
+  }
+  
+  .login-form .form-info p a {
+    text-decoration: none;
+    color: #1877f2;
+    font-size: 14px;
+  }
+  .login-form .form-info p a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .login-form .divider {
+    border: 0.2px solid rgb(222, 221, 221);
+    width: 90%;
+    margin: 20px auto;
+  }
+  
+  .login-form .form-button .bt-login-create-account {
+    background-color: #42b72a;
+    color: white;
+    width: 65%;
+    font-size: 1rem;
+  }
+  .login-form .form-button .bt-login-create-account:hover {
+    background-color: #30a519;
+  }
+  
+  .login-form .form-row input {
+    height: 50px;
+    font-size: 1.1rem;
+    width: 85%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 5px auto;
+    padding-left: 20px;
+  }
+  .login-footer {
+    grid-area: login-footer;
+    width: 330px;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+  .login-footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  .login-footer a:hover {
+    text-decoration: underline;
+  }
+  .container-login {
+    margin: 0 auto;
+    display: grid;
+    height: 100vh;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 360px 1fr;
+    grid-template-areas: "login-title" "login-form" "login-footer";
+  }
+  
+  footer {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1OOpx 1fr 100px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    font-size: 12px;
+  }
+  footer .liens1 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    list-style-type: none;
+    margin: 0 auto;
+    width: 70%;
+    color: gray;
+    margin-top: 20px;
+  }
+  footer .liens {
+    display: flex;
+    list-style-type: none;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    color: gray;
+    margin-bottom: 100px;
+  }
+  footer .liens a {
+    text-decoration: none;
+    color: gray;
+  }
+  footer .liens1 a {
+    text-decoration: none;
+    color: gray;
+  }
+  footer i {
+    display: flex;
+    background-color: whitesmoke;
+    font-size: 1.1rem;
+    color: black;
+    font-weight: bold;
+    border: 0.5px solid gray;
+    padding: 0px 6px 4px 6px;
+    height: 15px;
+    justify-content: center;
+    text-align: center;
+  }
+  footer .divider {
+    border-top: 0.3px solid rgb(222, 221, 221);
+    width: 50%;
+    margin: 0px auto;
+    margin-bottom: 10px;
+  }
+  footer i:hover {
+    background-color: rgb(211, 210, 210);
+    cursor: pointer;
+  }
+  
+  footer a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .footer-bottom {
+    display: flex;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .meta {
+    display: flex;
+  }
+  
+  @media screen and (min-width: 900px) {
+    .container {
+      height: 80vh;
+    }
+  
+    .container-login {
+      height: 70vh;
+      text-align: center;
+      padding: 100px 100px;
+      grid-template-columns: 1fr 650px;
+      grid-template-rows: 370px 200px;
+      grid-template-areas: "login-title login-form" "none login-footer";
+    }
+    .login-title {
+      text-align: left;
+      margin-left: 100px;
+      margin-top: 100px;
+    }
+    .login-form {
+      width: 400px;
+      height: 360px;
+    }
+    .login-form .form-row input {
+      width: 85%;
+    }
+    .login-form .form-button .bt-login-submit {
+      width: 92%;
+    }
+    footer {
+      height: 25vh;
+      justify-content: center;
+    }
+    footer .liens1 {
+      width: 70%;
+      height: 20px;
+      margin-top: 40px;
+    }
+    footer .divider {
+      height: 10px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+  
+      width: 67%;
+    }
+    footer .liens {
+      font-size: 12px;
+      width: 70%;
+      height: 10px;
+      line-height: 10px;
+    }
+    .meta {
+      width: 70%;
+    }
+  }
+  
+  @media screen and (min-width: 1450px) {
+    .container-login {
+      grid-template-columns: 600px 400px;
+      justify-content: center;
+    }
+  }
+  
