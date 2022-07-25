@@ -1,10 +1,11 @@
 .container-register {
     width: 5OOpx;
-    height: 650px;
+    height: 670px;
+    margin: 0 auto;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-60%, -60%);
+    transform: translate(-50%, -50%);
     box-shadow: 0 2px 4px rgb(0 0 0 /10%), 0 8px 16px rgb(0 0 0 /33%);
     border-radius: 5px;
 }
@@ -51,7 +52,7 @@ color: gray;
 }
 .container-register .register-form .form-group-input input {
     flex: 1;
-    font-size: 1.1rem;
+    
     padding-left: 10px;
   
 }
@@ -61,11 +62,12 @@ color: gray;
 }
 .container-register .register-form .form-inline-input input {
     flex: 1;
-    font-size: 1.1rem;
+   
     padding-left: 10px;
 }
 .container-register .register-form .form-inline-date p {
     color: gray;
+    font-size: 0.8em;
 }
 .container-register .form-select-date  {
     display: flex;
@@ -83,6 +85,7 @@ color: gray;
 
 .container-register .form-inline-genre {
     color:gray;
+    font-size: 0.8em;
 }
  .container-register .form-radio-items {
     text-align: center;
@@ -121,4 +124,13 @@ color: gray;
     line-height: 5px;
     color: white;
     margin-top: 5px;
+}
+
+@media screen and (max-width:600px) {
+    .container-register{
+        width: 360px;
+    }
+    .container-register .form-radio-items .form-radio-item label{
+        font-size: 0.8em;
+    }
 }
