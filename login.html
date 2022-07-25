@@ -19,7 +19,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="container-login" style="display: none;">
+      <div class="container-login">
         <div class="login-title">
           <h1>facebook</h1>
           <p>
@@ -48,7 +48,7 @@
             </div>
             <div class="divider"></div>
             <div class="form-button">
-              <button class="bt-login-create-account">
+              <button class="bt-login-create-account" id="create-account-button">
                 Créer nouveau compte
               </button>
             </div>
@@ -61,9 +61,9 @@
           </p>
         </div>
       </div>
-      
-      <div class="container-register">
-        <div class="close">
+      <div class="overlay" id="overlay"></div>
+      <div class="container-register" id="register-popup">
+        <div class="close" id="close-register">
             <i class="fas fa-times"></i>
         </div>
         <div class="register-title">
@@ -142,7 +142,7 @@
       
       
     </div>
-    <footer style="display: none;">
+    <footer>
       <ul class="liens1 gap-10">
         <li><a href="#">Francais (France)</a></li>
         <li><a href="#">English (US)</a></li>
@@ -190,5 +190,6 @@
         <p class="meta">Meta &copy; 2022</p>
       </ul>
     </footer>
+    <script src="assets/js/script.js "></script>
   </body>
 </html>
